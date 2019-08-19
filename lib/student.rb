@@ -18,7 +18,8 @@ class Student
       grade TEXT
     )
     SQL
-    DB[:conn].execute(sqlite)
+
+    DB[:conn].execute(sql)
   end
 
   def self.drop_table
